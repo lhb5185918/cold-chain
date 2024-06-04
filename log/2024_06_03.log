@@ -1,0 +1,26 @@
+2024-06-03 17:55:01,449 - test_cold_banding.py[line:24] - INFO - pda获取空闲冰排 {'code': 200, 'msg': '成功', 'obj': []} 200 
+2024-06-03 17:55:01,585 - test_cold_banding.py[line:38] - INFO - pda获取空闲保温箱 {'code': 200, 'msg': '成功', 'obj': {'incubatorInfoPOList': [{'key': 'bwx1 已绑冰排0/null', 'value': 1765766589731328, 'code': None}]}} 200 
+2024-06-03 17:55:01,648 - test_cold_banding.py[line:49] - INFO - pda获取空闲冷柜 {'code': 200, 'msg': '成功', 'obj': {'freezerInfoList': [{'key': 'T0', 'value': 1765771415032320, 'code': None}]}} 200 
+2024-06-03 17:55:01,727 - test_cold_banding.py[line:61] - INFO - 冷柜绑定 {'code': 1000, 'msg': '绑定失败! 所有采集的冰排工作状态都是蓄冷中!'} 200 
+2024-06-03 17:55:02,094 - test_cold_banding.py[line:61] - INFO - 蓄冷中冰排绑定冷柜 {'code': 1000, 'msg': '绑定失败! 所有采集的冰排工作状态都是蓄冷中!'} 200 
+2024-06-03 17:55:02,429 - test_cold_ice.py[line:27] - INFO - 冰排设备型号重复新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:02,490 - test_cold_ice.py[line:27] - INFO - 冰排设备型号正常新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:02,561 - test_cold_ice.py[line:27] - INFO - 冰排缺失必填项新增 {'code': 10001, 'msg': '参数错误[设备型号不能为空]'} 200 
+2024-06-03 17:55:03,626 - test_cold_ice.py[line:27] - INFO - 冰排设备型号过长新增 {'code': 10001, 'msg': '参数错误[设备型号长度不能超过60]'} 200 
+2024-06-03 17:55:03,724 - test_cold_ice.py[line:47] - INFO - 保温箱正常新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:03,787 - test_cold_ice.py[line:47] - INFO - 保温箱重复新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:03,859 - test_cold_ice.py[line:47] - INFO - 保温箱缺失必填项新增 {'code': 10001, 'msg': '参数错误[设备型号不能为空]'} 200 
+2024-06-03 17:55:03,919 - test_cold_ice.py[line:47] - INFO - 保温箱过长新增 {'code': 10001, 'msg': '参数错误[设备型号长度不能超过60]'} 200 
+2024-06-03 17:55:03,976 - test_cold_ice.py[line:67] - INFO - 冷柜正常新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:04,052 - test_cold_ice.py[line:67] - INFO - 冷柜重复新增 {'code': 100, 'msg': '设备型号已存在'} 200 
+2024-06-03 17:55:04,114 - test_cold_ice.py[line:67] - INFO - 冷柜缺失必填项新增 {'code': 10001, 'msg': '参数错误[设备型号不能为空]'} 200 
+2024-06-03 17:55:04,200 - test_cold_ice.py[line:67] - INFO - 冷柜过长新增 {'code': 10001, 'msg': '参数错误[设备型号长度不能超过60]'} 200 
+2024-06-03 17:55:04,273 - test_cold_ice.py[line:87] - INFO - 冰排资料新增 {'code': 1001, 'msg': '冰排设备编码【testcold1】已存在,操作失败'} 200 
+2024-06-03 17:55:04,365 - test_cold_ice.py[line:87] - INFO - 冰排资料重复新增 {'code': 1001, 'msg': '冰排设备编码【testcold1】已存在,操作失败'} 200 
+2024-06-03 17:55:04,491 - test_cold_ice.py[line:87] - INFO - 冰排资料缺失必填项新增 {'code': 10001, 'msg': '参数错误[RFID不能为空]'} 200 
+2024-06-03 17:55:04,579 - test_cold_ice.py[line:105] - INFO - 保温箱资料新增 {'code': 1001, 'msg': '保温箱设备编码【bwx2】已存在,操作失败'} 200 
+2024-06-03 17:55:04,657 - test_cold_ice.py[line:105] - INFO - 保温箱资料重复新增 {'code': 1001, 'msg': '保温箱设备编码【bwx2】已存在,操作失败'} 200 
+2024-06-03 17:55:04,746 - test_cold_ice.py[line:105] - INFO - 保温箱资料缺失必填项新增 {'code': 10001, 'msg': '参数错误[RFID不能为空]'} 200 
+2024-06-03 17:55:04,841 - test_cold_ice.py[line:123] - INFO - 冷柜资料新增 {'code': 1001, 'msg': '冷柜设备编码【T1】已存在,操作失败'} 200 
+2024-06-03 17:55:04,930 - test_cold_ice.py[line:123] - INFO - 冷柜资料重复新增 {'code': 1001, 'msg': '冷柜设备编码【T1】已存在,操作失败'} 200 
+2024-06-03 17:55:04,992 - test_cold_ice.py[line:123] - INFO - 冷柜资料缺失必填项新增 {'code': 10001, 'msg': '参数错误[设备编码不能为空]'} 200 

@@ -1,0 +1,2 @@
+[32mINFO    [0m utils.requests_util:requests_util.py:47 URL: http://bswms-uat-01.baheal.com:7777/bp/pda/bindIncubator/scanIncubatorInfoBarcodeList, Method: post, Response Code: 200, Response Body: {'code': 200, 'msg': '成功', 'obj': {'incubatorInfoPOList': [{'key': 'bwx1 已绑冰排0/null', 'value': 1765766589731328, 'code': None}]}}, Request Data: ['bwx1']
+[32mINFO    [0m logger:test_cold_banding.py:31 pda获取空闲保温箱 {'code': 200, 'msg': '成功', 'obj': {'incubatorInfoPOList': [{'key': 'bwx1 已绑冰排0/null', 'value': 1765766589731328, 'code': None}]}} 200

@@ -1,0 +1,104 @@
+cold_ice:
+  - title: "冰排设备型号重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "test_ice1","coldStorageDuration": 0.1,"releaseColdDuration": 0.1,"detailList": [ ] }
+
+  - title: "冰排设备型号正常新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "test_ice1","coldStorageDuration": 0.1,"releaseColdDuration": 0.1,"detailList": [ ] }
+
+  - title: "冰排缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "","coldStorageDuration": ,"releaseColdDuration": ,"detailList": [ ] }
+
+  - title: "冰排设备型号过长新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "test_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_longtest_long","coldStorageDuration": 0.1 ,"releaseColdDuration": 0.1,"detailList": [ ] }
+
+bwx_test:
+  - title: "保温箱正常新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "bwxtest","detailList": [ ] }
+
+  - title: "保温箱重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "bwxtest","detailList": [ ] }
+
+  - title: "保温箱缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "","detailList": [ ] }
+
+  - title: "保温箱过长新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "bwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtest","detailList": [ ] }
+
+cold_test:
+  - title: "冷柜正常新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "coldtest","detailList": [ ] }
+
+  - title: "冷柜重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "coldtest","detailList": [ ] }
+
+  - title: "冷柜缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "","detailList": [ ] }
+
+  - title: "冷柜过长新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerCategory/add"
+    method: "POST"
+    data: { "isEnable": 1,"equipmentModel": "coldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcoldcold","detailList": [ ] }
+
+test_cold_add:
+  - title: "冰排资料新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "testcold1","equipmentName": "testddata","iceRowCategoryId": "1764825015063040","coldStorageDuration": 0.1,"releaseColdDuration": 0.1,"releaseColdDurationMax": null,"weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"rfid": "test2","imageList": [ ] }
+  - title: "冰排资料重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "testcold1","equipmentName": "testddata","iceRowCategoryId": "1764825015063040","coldStorageDuration": 0.1,"releaseColdDuration": 0.1,"releaseColdDurationMax": null,"weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"rfid": "test2","imageList": [ ] }
+  - title: "冰排资料缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/iceRowInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "","equipmentName": "testddata","iceRowCategoryId": "1764825015063040","coldStorageDuration": 0.1,"releaseColdDuration": 0.1,"releaseColdDurationMax": null,"weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"rfid": "","imageList": [ ] }
+
+test_bwx_add:
+  - title: "保温箱资料新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorInfo/add"
+    method: "POST"
+    data: {"isEnable":1,"workStatus":10,"equipmentCode":"bwx2","equipmentName":"testbwx","rfid":"bwx2","incubatorCategoryId":"1764857853645312","weight":null,"innerLength":null,"innerWidth":null,"innerHeight":null,"innerVolume":null,"externalLength":null,"externalWidth":null,"externalHeight":null,"externalVolume":null,"factoryModel":null,"phaseTransitionTemperature":null,"canStoreIceRow":null,"imageList":[]}
+  - title: "保温箱资料重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorInfo/add"
+    method: "POST"
+    data: {"isEnable":1,"workStatus":10,"equipmentCode":"bwx2","equipmentName":"testbwx","rfid":"bwx2","incubatorCategoryId":"1764857853645312","weight":null,"innerLength":null,"innerWidth":null,"innerHeight":null,"innerVolume":null,"externalLength":null,"externalWidth":null,"externalHeight":null,"externalVolume":null,"factoryModel":null,"phaseTransitionTemperature":null,"canStoreIceRow":null,"imageList":[]}
+  - title: "保温箱资料缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/incubatorInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "","equipmentName": "testbwx","rfid": "","incubatorCategoryId": "1764857853645312","weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"canStoreIceRow": null,"imageList": [ ] }
+
+test_ice_add:
+  - title: "冷柜资料新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerInfo/add"
+    method: "POST"
+    data: {"isEnable":1,"workStatus":10,"equipmentCode":"T1","rfid":"T1","freezerCategoryId":"1764869874045440","weight":null,"innerLength":null,"innerWidth":null,"innerHeight":null,"innerVolume":null,"externalLength":null,"externalWidth":null,"externalHeight":null,"externalVolume":null,"factoryModel":null,"phaseTransitionTemperature":null,"equipmentName":"test_ice","imageList":[]}
+  - title: "冷柜资料重复新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "T1","rfid": "T1","freezerCategoryId": "1764869874045440","weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"equipmentName": "test_ice","imageList": [ ] }
+  - title: "冷柜资料缺失必填项新增"
+    url: "http://bswms-uat-01.baheal.com:7777/bp/base/freezerInfo/add"
+    method: "POST"
+    data: { "isEnable": 1,"workStatus": 10,"equipmentCode": "","rfid": "","freezerCategoryId": "1764869874045440","weight": null,"innerLength": null,"innerWidth": null,"innerHeight": null,"innerVolume": null,"externalLength": null,"externalWidth": null,"externalHeight": null,"externalVolume": null,"factoryModel": null,"phaseTransitionTemperature": null,"equipmentName": "test_ice","imageList": [ ] }
