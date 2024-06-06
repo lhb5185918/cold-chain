@@ -1,7 +1,7 @@
 band_ice:
-- data:
+- data: &id001
     freezerInfoCode: T0
-    freezerInfoId: '1759027553423872'
+    freezerInfoId: 1765771415032320
     iceRowInfoReqList:
     - bookQtyNum: null
       coldStorageDuration: null
@@ -9,10 +9,10 @@ band_ice:
       coldStorageDurationMin: null
       companyCode: QDBYYYGF
       correlationEquipmentCode: null
-      createTime: '2024-06-03 14:07:55'
+      createTime: '2024-06-05 16:47:39'
       creator: lhb
       creatorName: 李鸿宾
-      equipmentCode: testcold1
+      equipmentCode: '37403'
       equipmentModel: null
       equipmentName: testddata
       externalHeight: null
@@ -21,7 +21,7 @@ band_ice:
       externalWidth: null
       factoryModel: null
       iceRowCategoryId: 1764825015063040
-      id: '1768889953620480'
+      id: '1771878138286592'
       imageList: null
       incubatorInfoCode: null
       innerHeight: null
@@ -31,85 +31,32 @@ band_ice:
       inventoryTotalNum: null
       isEnable: 1
       isEnableName: 启用
-      key: '1768889953620480'
-      kxNum: 1
+      key: '1771878138286592'
+      kxNum: 0
       optimistic: 0
       phaseTransitionTemperature: null
       releaseColdDuration: null
       releaseColdDurationMax: null
       releaseColdDurationMin: null
       remark: ''
-      rfid: test2
-      sfzNum: 0
+      rfid: '37403'
+      sfzNum: 1
       storageOrReleaseColdDuration: null
       storageOrReleaseColdDurationMin: null
       syzNum: 0
       totalNum: 1
-      updateTime: '2024-06-03 14:07:55'
+      updateTime: '2024-06-06 13:34:40'
       updater: lhb
       updaterName: 李鸿宾
       weight: null
       whId: 817929940341248
-      workStatus: 10
-      workStatusName: 空闲
+      workStatus: 30
+      workStatusName: 释冷中
       xlzNum: null
   method: post
   title: 冷柜绑定
   url: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/bindConfirm
-- data:
-    freezerInfoCode: T0
-    freezerInfoId: '1759027553423872'
-    iceRowInfoReqList:
-    - bookQtyNum: null
-      coldStorageDuration: null
-      coldStorageDurationActual: null
-      coldStorageDurationMin: null
-      companyCode: QDBYYYGF
-      correlationEquipmentCode: null
-      createTime: '2024-06-03 14:07:55'
-      creator: lhb
-      creatorName: 李鸿宾
-      equipmentCode: testcold1
-      equipmentModel: null
-      equipmentName: testddata
-      externalHeight: null
-      externalLength: null
-      externalVolume: null
-      externalWidth: null
-      factoryModel: null
-      iceRowCategoryId: 1764825015063040
-      id: '1768889953620480'
-      imageList: null
-      incubatorInfoCode: null
-      innerHeight: null
-      innerLength: null
-      innerVolume: null
-      innerWidth: null
-      inventoryTotalNum: null
-      isEnable: 1
-      isEnableName: 启用
-      key: '1768889953620480'
-      kxNum: 1
-      optimistic: 0
-      phaseTransitionTemperature: null
-      releaseColdDuration: null
-      releaseColdDurationMax: null
-      releaseColdDurationMin: null
-      remark: ''
-      rfid: test2
-      sfzNum: 0
-      storageOrReleaseColdDuration: null
-      storageOrReleaseColdDurationMin: null
-      syzNum: 0
-      totalNum: 1
-      updateTime: '2024-06-03 14:07:55'
-      updater: lhb
-      updaterName: 李鸿宾
-      weight: null
-      whId: 817929940341248
-      workStatus: 10
-      workStatusName: 空闲
-      xlzNum: null
+- data: *id001
   method: POST
   title: 蓄冷中冰排绑定冷柜
   url: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/bindConfirm
@@ -119,7 +66,7 @@ test_bwx_banding:
   title: pda获取空闲保温箱
   url: http://bswms-uat-01.baheal.com:7777/bp/pda/bindIncubator/scanIncubatorInfoBarcodeList
 test_cold_banding:
-- RFID: test2
+- RFID: 37403
   method: POST
   title: pda获取空闲冰排
   url: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/scanIceRowInfoBarcodeList
@@ -128,8 +75,7 @@ test_ice_banding:
   method: POST
   title: pda获取空闲冷柜
   url: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/scanFreezerInfoBarcodeList
-unable_ice:
-- RFID: null
-  method: POST
+un_band_ice:
+- method: POST
   title: 解绑冷柜
-  url: null
+  url: http://bswms-uat-01.baheal.com:7777/bp/pda/unbindFreezer/unbindConfirm

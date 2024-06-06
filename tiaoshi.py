@@ -1,7 +1,8 @@
 import pytest
 import requests
-from utils.getyamldata import read_yaml
+from utils.getyamldata import read_yaml, write_yaml
 from config.path import Path
+import random
 #
 # url = read_yaml(Path.config_file_path, 'token', 'token_url')
 # headers = {"Content-Type": read_yaml(Path.config_file_path, 'token', "Content-Type")}
@@ -11,6 +12,6 @@ from config.path import Path
 # print(headers)
 # print(res['obj']['token'])
 
-res = read_yaml(Path.test_pda_path,"band_ice")
-for i in res:
-    print(i)
+
+
+print(read_yaml(Path.test_pda_path, 'band_ice', "data"))

@@ -33,3 +33,5 @@ def write_yaml(file_path, moudle_name, key, value):
     with open(file_path, 'w', encoding="utf-8") as file:
         yaml.safe_dump(data, file, default_flow_style=False, allow_unicode=True)
     return data
+
+print(read_yaml(Path.test_file_path, 'test_cold_add',"data")['equipmentCode'])

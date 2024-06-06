@@ -44,7 +44,8 @@ class Request:
         dict1['code'] = code
         dict1['body'] = body
         dict1['cookies'] = cookies
-        self.logger.info(f"URL: {url}, Method: {method}, Response Code: {code}, Response Body: {body}, Request Data: {data}")
+        self.logger.info(
+            f"URL: {url}, Method: {method}, Response Code: {code}, Response Body: {body}, Request Data: {data}")
         return dict1
 
     def send(self, url, method, **kwargs):
