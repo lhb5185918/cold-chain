@@ -19,20 +19,20 @@ class Request:
         # 给logger添加handler
         self.logger.addHandler(fh)
 
-    def api_run(self, url, method, data=None, header=None, cookie=None, file=None, filename=None,
+    def api_run(self, url, method, data=None, headers=None, cookie=None, file=None, filename=None,
                 file_path=None):
         if method == 'post':
 
             if file is not None:
                 files = {str(file): (str(filename), open(str(file_path), 'rb'),
                                      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')}
-                res = requests.post(url=url, headers=header, json=data, files=files)
+                res = requests.post(url=url, headers=headers, json=data, files=files)
 
             else:
-                res = requests.post(url=url, headers=header, json=data)
+                res = requests.post(url=url, headers=headers, json=data)
 
         else:
-            res = requests.get(url=url, headers=header)
+            res = requests.get(url=url, headers=headers)
 
         code = res.status_code
         cookies = res.cookies.get_dict()

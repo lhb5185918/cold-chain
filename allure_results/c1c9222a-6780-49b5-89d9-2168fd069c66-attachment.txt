@@ -1,2 +1,0 @@
-[32mINFO    [0m utils.requests_util:requests_util.py:47 URL: http://bswms-uat-01.baheal.com:7777/bp/base/freezerCategory/add, Method: post, Response Code: 200, Response Body: {'code': 100, 'msg': '设备型号已存在'}, Request Data: {'isEnable': 1, 'equipmentModel': 'coldtest', 'detailList': []}
-[32mINFO    [0m logger:test_cold_ice.py:64 冷柜正常新增 {'code': 100, 'msg': '设备型号已存在'} 200

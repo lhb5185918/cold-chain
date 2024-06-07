@@ -16,9 +16,9 @@ class Path:
 
     config_file_path = project_path + os.path.sep + "testdata" + os.path.sep + "config.yaml"
 
-    test_file_path = project_path + os.path.sep + "testdata" + os.path.sep + "test_pc_add.yaml"
+    base_data_path = project_path + os.path.sep + "testdata" + os.path.sep + "base_data.yaml"
 
-    test_pda_path = project_path + os.path.sep + "testdata" + os.path.sep + "test_pda_banding.yaml"
+    in_order_path = project_path + os.path.sep + "testdata" + os.path.sep + "in_order.yaml"
 
     data_path = project_path + os.path.sep + "testdata"
 

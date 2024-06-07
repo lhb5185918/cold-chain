@@ -1,2 +1,0 @@
-[32mINFO    [0m utils.requests_util:requests_util.py:47 URL: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/scanIceRowInfoBarcodeList, Method: post, Response Code: 200, Response Body: {'code': 200, 'msg': '成功', 'obj': []}, Request Data: ['test2']
-[32mINFO    [0m logger:test_cold_banding.py:24 pda获取空闲冰排 {'code': 200, 'msg': '成功', 'obj': []} 200

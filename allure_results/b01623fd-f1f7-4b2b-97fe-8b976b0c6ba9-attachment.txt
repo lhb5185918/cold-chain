@@ -1,2 +1,0 @@
-[32mINFO    [0m utils.requests_util:requests_util.py:47 URL: http://bswms-uat-01.baheal.com:7777/bp/pda/bindFreezer/scanFreezerInfoBarcodeList, Method: post, Response Code: 200, Response Body: {'code': 200, 'msg': '成功', 'obj': {'freezerInfoList': [{'key': 'T0', 'value': 1765771415032320, 'code': None}]}}, Request Data: ['T0']
-[32mINFO    [0m logger:test_cold_banding.py:44 pda获取空闲冷柜 {'code': 200, 'msg': '成功', 'obj': {'freezerInfoList': [{'key': 'T0', 'value': 1765771415032320, 'code': None}]}} 200

@@ -1,2 +1,0 @@
-[32mINFO    [0m utils.requests_util:requests_util.py:47 URL: http://bswms-uat-01.baheal.com:7777/bp/base/incubatorCategory/add, Method: post, Response Code: 200, Response Body: {'code': 10001, 'msg': '参数错误[设备型号长度不能超过60]'}, Request Data: {'isEnable': 1, 'equipmentModel': 'bwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtestbwxtest', 'detailList': []}
-[32mINFO    [0m logger:test_cold_ice.py:46 保温箱过长新增 {'code': 10001, 'msg': '参数错误[设备型号长度不能超过60]'} 200
