@@ -7,7 +7,7 @@ import allure
 import time
 
 
-class TestColdIce():
+class TestColdIce:
     cold_data = read_yaml(Path.test_file_path, 'cold_ice')
     bwx_data = read_yaml(Path.test_file_path, 'bwx_test')
     ice_data = read_yaml(Path.test_file_path, 'cold_test')
@@ -34,7 +34,6 @@ class TestColdIce():
         elif title == '冰排设备型号过长新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备型号长度不能超过60]'
 
-    time.sleep(1)
 
     @allure.feature("保温箱新增")
     @pytest.mark.run(order=5)
@@ -55,7 +54,6 @@ class TestColdIce():
         elif title == '保温箱过长新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备型号长度不能超过60]'
 
-    time.sleep(1)
 
     @allure.feature("冷柜新增")
     @pytest.mark.run(order=6)
@@ -76,8 +74,6 @@ class TestColdIce():
         elif title == '冷柜过长新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备型号长度不能超过60]'
 
-    time.sleep(1)
-
     @allure.feature("冰排资料新增")
     @pytest.mark.run(order=7)
     @pytest.mark.parametrize("cold_add", cold_add)
@@ -94,8 +90,6 @@ class TestColdIce():
             assert res['code'] == 200 and res['body']['msg'] == '成功'
         elif title == '冰排资料缺失必填项新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备编码不能为空]'
-
-    time.sleep(1)
 
     @allure.feature("保温箱资料新增")
     @pytest.mark.run(order=8)
@@ -114,8 +108,6 @@ class TestColdIce():
         elif title == '保温箱资料缺失必填项新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备编码不能为空]'
 
-    time.sleep(1)
-
     @allure.feature("冷柜资料新增")
     @pytest.mark.run(order=9)
     @pytest.mark.parametrize("ice_add", ice_add)
@@ -132,5 +124,3 @@ class TestColdIce():
             assert res['code'] == 200 and res['body']['msg'] == '成功'
         elif title == '冷柜资料缺失必填项新增':
             assert res['code'] == 200 and res['body']['msg'] == '参数错误[设备编码不能为空]'
-
-    time.sleep(1)

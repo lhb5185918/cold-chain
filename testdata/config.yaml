@@ -1,7 +1,7 @@
 ---
- token:
- - title: "认证接口"
-   token_url: http://bswms-uat-01.baheal.com:7777/oauth/password/unencrypted
-   Content-Type: application/json;charset=UTF-8
-   data: {"userNo":"lhb","pwd":"lhx7758521","platForm":"app","companyCode":"QDBYYYGF","whId":817929940341248,"warehouseId":"","haveWarehouse":1,"clientId":"RFID_PDA","userLanguage":"zh-CN"}
+token:
+  - title: "认证接口"
+    token_url: http://bswms-uat-01.baheal.com:7777/oauth/password/unencrypted
+    Content-Type: application/json;charset=UTF-8
+    data: { "userNo": "lhb","pwd": "lhx7758521","platForm": "app","companyCode": "QDBYYYGF","whId": 817929940341248,"warehouseId": "","haveWarehouse": 1,"clientId": "RFID_PDA","userLanguage": "zh-CN" }
 ...

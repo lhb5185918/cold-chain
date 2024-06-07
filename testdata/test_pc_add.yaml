@@ -166,7 +166,7 @@ test_bwx_add:
 test_cold_add:
 - data: &id001
     coldStorageDuration: 0.1
-    equipmentCode: '37403'
+    equipmentCode: '296281449'
     equipmentName: testddata
     externalHeight: null
     externalLength: null
@@ -183,7 +183,7 @@ test_cold_add:
     phaseTransitionTemperature: null
     releaseColdDuration: 0.1
     releaseColdDurationMax: null
-    rfid: '37403'
+    rfid: '296281449'
     weight: null
     workStatus: 10
   method: POST
